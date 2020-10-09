@@ -1,0 +1,27 @@
+{
+  "JsonKey": "web.json key 1",
+  "JsonArray": [
+    {
+      "name": "aa",
+      "age": "11"
+    },
+    {
+      "name": "bb",
+      "age": "12"
+    }
+  ],
+  "JsonObject": {
+    "name": "cc",
+    "age": "12",
+    "Contacts": [
+      {
+        "name": "aabbcc",
+        "age": "11"
+      },
+      {
+        "name": "bb",
+        "age": "12"
+      }
+    ]
+  }
+}

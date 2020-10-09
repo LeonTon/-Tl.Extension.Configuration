@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlConfig>
+<XmlPerson>
+  <name>xml aa</name>
+  <age>10</age>
+  <Address>
+    <province>jiang su</province>
+    <city>su zhou</city>
+    <area>Yuan Qu</area>
+  </Address>
+</XmlPerson>
+</XmlConfig>

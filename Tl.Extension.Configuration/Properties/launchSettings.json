@@ -20,10 +20,13 @@
     "Tl.Extension.Configuration": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "home",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "product",
+        "DAOKEAPPUK": "flight.netcore.paymentmiddleoffice",
+        "DAOKEENV": "qa",
+        "DAOKEENVTYPE": "qa"
       }
     }
   }

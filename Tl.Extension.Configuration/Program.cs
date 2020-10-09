@@ -21,6 +21,23 @@ namespace Tl.Extension.Configuration
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureAppConfiguration(ConfigureAppConfiguration);
                 });
+
+
+        private static void ConfigureAppConfiguration(WebHostBuilderContext context, IConfigurationBuilder builder)
+        {
+            var env = context.HostingEnvironment;
+            builder
+                .AddEnvironmentVariables()
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: false, reloadOnChange: true)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile("web.json", optional: false, reloadOnChange: true)
+                .AddXmlFile("web.xml", optional: false, reloadOnChange: true)
+                .AddIniFile("web.ini", optional: true, reloadOnChange: true)
+                .AddCustomConfig();
+        }
+      
+
     }
 }
